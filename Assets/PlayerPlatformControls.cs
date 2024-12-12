@@ -9,14 +9,21 @@ public class PlayerPlatformControls : MonoBehaviour
  
     void Start()
     {
-        
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        rigidbody2D.velocity = new Vector3();
+
+        if (Input.GetKey(KeyCode.A)&& transform.position.x > -9)
         {
-            transform.position = new Vector2(-0.1f, 0);
+            rigidbody2D.velocity = new Vector3(-1, 0) * speed;
         }
-    }
+        if (Input.GetKey(KeyCode.D) && transform.position.x < 9)
+        {
+            rigidbody2D.velocity = new Vector3(1, 0) * speed;
+        }
+        
+    }   
 }
