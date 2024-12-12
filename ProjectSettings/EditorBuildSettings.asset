@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 4b97ecf588465134ba49a7ad7d7e878a
+  - enabled: 1
+    path: Assets/Scenes/brekoutgame.unity
+    guid: dcc6d43850e42f341abd72e5eda2a4b3
   m_configObjects: {}
